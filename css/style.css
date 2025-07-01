@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf2f8; /* Baby pink background */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    color: #d63384; /* Dark pink for logo */
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #d63384;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #fdf2f8, #fff);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+.btn {
+    background-color: #d63384;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b02a6c;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    color: #d63384;
+}
+
+/* Projects */
+.projects-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    color: #d63384;
+}
+
+.contact-section a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}

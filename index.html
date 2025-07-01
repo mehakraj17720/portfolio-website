@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mehak Raj Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fef2f7;
+      color: #2b2b2b;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .navbar {
+      background-color: #ffe4ec;
+      border-bottom: 1px solid #d8c2cc;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar-brand {
+      color: #d63384 !important;
+      font-size: 45px;
+      font-weight: 700;
+    }
+    .nav-link {
+      color: #d63384 !important;
+      font-size: 26px;
+      font-weight: 700;
+       text-transform: uppercase;
+  margin-left: 15px;
+    }
+  
+.hero {
+  background: linear-gradient(rgba(255, 228, 236, 0.85), rgba(255, 228, 236, 0.85)),
+              url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 180px 20px 120px;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+    #typing-animation {
+  font-size: 44px;
+  font-weight: 800;
+  color: #e83e8c;
+  text-shadow: 2px 2px 6px rgba(214, 51, 132, 0.4);
+  margin-top: 20px;
+}
+
+    .section-title {
+      color: #d63384;
+      border-bottom: 3px solid #d8c2cc;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: 800;
+      font-size: 45px;
+    }
+    .section-subtitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #d63384;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(214, 51, 132, 0.3);
+  opacity: 0.9;
+  letter-spacing: 0.6px;
+}
+
+    .project {
+      background-color: #fff0f5;
+      border: 1px solid #d8c2cc;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .project h4 {
+      font-weight: bold;
+      font-size: 26px;
+    }
+    .project a {
+      text-decoration: none;
+      color: inherit;
+    }
+   .btn-primary {
+  background-color: #d63384;
+  border: none;
+  font-weight: bold;
+  padding: 12px 28px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+
+    .btn-primary:hover {
+      background-color: #c2185b;
+    }
+    footer {
+      background-color: #ffe4ec;
+      color: #5a5a5a;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    .btn-resume-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+    .hero-img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 70%;
+      margin: 10px auto 0 ;
+      border: 10px solid #d63384;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        transform: translateY(-40px);
+    }
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 20px 0 5px 0;
+      flex-wrap: wrap;
+    }
+    .circle-icon {
+      width: 70px;
+      height: 70px;
+      background-color: #ffe4ec;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #d63384;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+    .circle-icon:hover {
+      background-color: #f8bbd0;
+    }
+    .contact-label {
+      font-size: 12px;
+      text-align: center;
+      color: #666;
+      margin-top: 5px;
+    }
+    .github-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .github-section h5 {
+      font-weight: bold;
+      font-size: 24px;
+      color: #d63384;
+      margin-bottom: 5px;
+    }
+    .github-link {
+      font-size: 13px;
+    }
+    .github-badge {
+      display: inline-block;
+      padding: 12px 40px;
+      background-color: #ffc0cb;
+      border-radius: 50px;
+      color: #d63384;
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .github-badge:hover {
+      background-color: #f9a1b8;
+    }
+    section {
+      min-height: 100vh;
+      padding-top: 140px;
+    }
+    .skill-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+.skill-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Mehak Raj</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    
+    <h1 id="typing-animation">Aspiring Data Analyst | Data Scientist</h1>
+    <p style="font-size: 22px; color: #c2185b; font-weight: 500; margin-top: 10px;">
+Empowering insights through data and visual storytelling.
+</p>
+
+    <div class="btn-resume-container">
+      <a href="cv/my cv.docx" download class="btn btn-primary">Download CV</a>
+    </div>
+    <img src="images/background.jpg" alt="Hero Background" style="margin-top: 30px; width: 100%; max-width: 700px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <span class="section-subtitle">Know more about me</span>
+      <p style="font-size: 22px; font-weight: 500; color: #555; line-height: 1.8;">
+  I am a passionate Data Science graduate with hands-on experience in machine learning, data visualization, and web app deployment. 
+  I specialize in turning raw datasets into actionable insights using Python, SQL, Tableau, and Power BI. 
+  My portfolio includes predictive modeling, dashboard design, and real-world analytics projects like the PCOS Risk Detection App.
+  <br><br>
+  I enjoy translating business questions into data solutions and making stories out of numbers. I’m always eager to learn new tools, collaborate on real-world challenges, and contribute to data-driven decision making.
+</p>
+
+    </div>
+    <div style="text-align:center; margin-top: 40px;">
+  <img src="images/background1.jpeg" alt="Decorative Background"
+       style="width: 400px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</div>
+
+
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <span class="section-subtitle">I love turning raw data into meaningful insights</span>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project">
+           <a href="https://github.com/mehakraj17720/pcos-risk-detection-app" target="_blank">
+
+              <img src="images/portfolio pcos.jpg" alt="PCOS App Screenshot" style="width:100%; border-radius:8px; margin-bottom:10px;">
+              <h4>PCOS Risk Detection App</h4>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project">
+            <a href="https://github.com/mehakraj17720/Retail-performance-dashboard" target="_blank">
+
+              <img src="images/portfolio retail.jpg" alt="Retail Dashboard" style="width:100%; border-radius:8px; margin-bottom:10px;">
+              <h4>Retail Sales Dashboard</h4>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project">
+            <a href="https://github.com/mehakraj17720/amazon-sales-analysis" target="_blank">
+
+              <img src="images/portfolio amazon.jpg" alt="Amazon Dashboard" style="width:100%; border-radius:8px; margin-bottom:10px;">
+              <h4>Amazon Sales Dashboard</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="github-section">
+        <h5>More Projects on GitHub</h5>
+<span class="section-subtitle">I love to solve problems and uncover hidden data stories</span>
+        <a class="github-badge" href="https://github.com/mehakraj17720" target="_blank">GitHub</a>
+
+      </div>
+    </div>
+  </section>
+
+ <section id="skills">
+  <div class="container text-center">
+    <h2 class="section-title">Skills</h2>
+    <span class="section-subtitle">Tools I use to analyze, visualize, automate & design</span>
+
+    <div class="row justify-content-center mt-4">
+      <!-- Excel -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="fas fa-file-excel skill-icon" style="font-size: 56px; color: green;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Excel</div>
+      </div>
+
+      <!-- Python -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="devicon-python-plain colored skill-icon" style="font-size: 56px;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Python</div>
+      </div>
+
+      <!-- Python Libraries -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="fas fa-cubes skill-icon" style="font-size: 56px; color: #d63384;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Python Libraries</div>
+      </div>
+
+      <!-- Power BI -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="fas fa-chart-bar skill-icon" style="font-size: 56px; color: #f8a100;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Power BI</div>
+      </div>
+
+      <!-- Tableau -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="fas fa-table skill-icon" style="font-size: 56px; color: #0073ba;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Tableau</div>
+      </div>
+
+      <!-- Jupyter -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="devicon-jupyter-plain colored skill-icon" style="font-size: 56px;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Jupyter</div>
+      </div>
+
+      <!-- SQL -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="devicon-sqlite-plain colored skill-icon" style="font-size: 56px;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">SQL</div>
+      </div>
+
+      <!-- VS Code -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="devicon-vscode-plain colored skill-icon" style="font-size: 56px;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">VS Code</div>
+      </div>
+
+      <!-- Web Designing -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="fas fa-laptop-code skill-icon" style="font-size: 56px; color: #e83e8c;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Web Designing</div>
+      </div>
+
+      <!-- Statistical Analysis -->
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="fas fa-chart-line skill-icon" style="font-size: 56px; color: #17a2b8;"></i>
+        <div style="margin-top: 10px; font-weight: 500; color: #444;">Statistical Analysis</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <span class="section-subtitle">Let’s connect — data talks, and I listen</span>
+      <div class="contact-icons">
+        <div>
+          <a href="mailto:mehakraj17720@gmail.com" class="circle-icon"><i class="fas fa-envelope"></i></a>
+          <div class="contact-label">mehakraj17720@gmail.com</div>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/mehakraj" target="_blank" class="circle-icon"><i class="fab fa-linkedin-in"></i></a>
+          <div class="contact-label">linkedin.com/in/mehakraj</div>
+        </div>
+        <div>
+  <a href="https://github.com/mehakraj17720" target="_blank" class="circle-icon">
+    <i class="fab fa-github"></i>
+  </a>
+  <div class="contact-label">github.com/mehakraj17720</div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mehak Raj. All rights reserved.
+  </footer>
+
+  <!-- Typing effect for hero -->
+ <script>
+  const text = "Aspiring Data Analyst | Data Scientist | Power BI & Tableau Developer | Python Enthusiast";
+
+    const typingEl = document.getElementById("typing-animation");
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        typingEl.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    typingEl.innerHTML = "";
+    typeWriter();
+  </script>
+</body>
+</html> 
